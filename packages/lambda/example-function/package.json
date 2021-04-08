@@ -1,0 +1,16 @@
+{
+  "name": "@lambda/example-function",
+  "version": "1.0.0",
+  "main": "src/main.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest"
+  },
+  "devDependencies": {
+    "@config/eslint-config-monorepo": "^1.0.0",
+    "@config/jest": "^1.0.0",
+    "@jest/globals": "^26.6.2"
+  }
+}

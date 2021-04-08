@@ -1,0 +1,9 @@
+{
+  "packages": [
+    "packages/config/*",
+    "packages/lambda/*"
+  ],
+  "version": "independent",
+  "useWorkspaces": true,
+  "npmClient": "yarn"
+}

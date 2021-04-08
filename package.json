@@ -1,0 +1,28 @@
+{
+  "name": "@gerjunior/lambda-monorepo-boilerplate",
+  "description": "A lerna monorepo boilerplate for using with AWS Lambda",
+  "version": "1.0.0",
+  "repository": "https://github.com/Gerjunior/lambda-monorepo-boilerplate",
+  "author": "Geraldo Júnior",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=14.15.5"
+  },
+  "workspaces": [
+    "packages/config/*",
+    "packages/lambda/*"
+  ],
+  "keywords": [
+    "monorepo",
+    "lerna",
+    "lambda",
+    "boilerplate",
+    "eslint",
+    "prettier"
+  ],
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "lerna": "^4.0.0"
+  }
+}
