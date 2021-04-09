@@ -18,7 +18,7 @@
 
 - [codecov](https://about.codecov.io/) -> quality assurance
 
-## How to run
+## :clipboard: How to run
 
 You'll need to have installed:
 
@@ -31,7 +31,7 @@ Optionally:
 - dbaeumer.vscode-eslint
 - esbenp.prettier-vscode
 
-### Commands
+### :computer: Commands
 
 - `lerna bootstrap` will install all packages dependencies in the root of the monorepo and with a single lockfile.
 - `lerna run script-name` -> it will execute a command in every package that has this command in the `scripts` tag. It can be `lint`,
@@ -41,9 +41,9 @@ Optionally:
 - `lerna add @config/eslint-config-monorepo --scope=@lambda/example-function` -> adds `@config/eslint-config-monorepo` to `@lambda/example-function`
   You can only add one package per time, but you can specify more than one scope with brackets expansions like `--scope=@lambda/{example-function,other-function}`.
 
-## Details
+## :books: Details
 
-### Why do I need a .gitignore inside each package?
+### :question: Why do I need a .gitignore inside each package?
 
 I really hate that file being there. I tried to decrease as much as I could the number of configuration files inside each package, but that's
 a hard task in some cases.
@@ -53,10 +53,10 @@ using `"mode": "auto"` with `eslint.workingDirectories` to automatically handle 
 So to have `codeActionsOnSave` and all VSCode's ESLint stuff working, we need a `.gitignore` in each package.
 PS: `codeActionsOnSave` formats your code when you save a file. Very useful since we are using ESLint with Prettier.
 
-### Why do I need that NODE_OPTIONS when running jest?
+### :question: Why do I need that NODE_OPTIONS when running jest?
 
 Because we are using ECMAScript Modules and Jest needs that extra configuration to work with it. [see here](https://jestjs.io/pt-BR/docs/ecmascript-modules)
 
-### More questions?
+### :question: More questions? :question
 
 Please LMK!
