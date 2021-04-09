@@ -1,0 +1,9 @@
+codecov:
+  token: ${{your_token_here}}
+comment:
+  layout: 'reach, diff, flags, files'
+  behavior: default
+  require_changes: true
+  require_base: yes
+  require_head: yes
+  branches: null
